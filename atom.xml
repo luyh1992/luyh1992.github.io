@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://luyh1992.github.io/"/>
-  <updated>2017-10-24T03:07:58.612Z</updated>
+  <updated>2017-10-24T07:21:17.264Z</updated>
   <id>http://luyh1992.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python网络爬虫二</title>
+    <link href="http://luyh1992.github.io/2017/10/24/Python%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB%E4%BA%8C/"/>
+    <id>http://luyh1992.github.io/2017/10/24/Python网络爬虫二/</id>
+    <published>2017-10-24T06:43:41.000Z</published>
+    <updated>2017-10-24T07:21:17.264Z</updated>
+    
+    <content type="html"><![CDATA[<p>根据嵩天视频教程整理</p><h1 id="Robots协议"><a href="#Robots协议" class="headerlink" title="Robots协议"></a>Robots协议</h1><h2 id="网络爬虫引发的问题"><a href="#网络爬虫引发的问题" class="headerlink" title="网络爬虫引发的问题"></a>网络爬虫引发的问题</h2><p>网络爬虫按尺寸可以划分为三大类：<br>&emsp;&emsp;爬取网页：小规模，数据量小，爬取速度不敏感。使用Request库实现<br>&emsp;&emsp;爬取网站，爬取系列网站：中规模，数据规模较大，爬取速度敏感。Scrapy库实现<br>&emsp;&emsp;爬取全网：大规模，搜索引擎，爬去速度关键。需要定制开发  </p><a id="more"></a><p>受限于编程水平和目的，网络爬虫将会给web服务器带来巨大的资源开销。<br>由于服务器上的数据往往具有产权归属，网络爬虫获得数据后用于牟利将带来法律风险。<br>网络爬虫可能具备突破简单访问控制的能力，获得被保护数据从而泄露个人隐私。  </p><h2 id="网络爬虫的限制"><a href="#网络爬虫的限制" class="headerlink" title="网络爬虫的限制"></a>网络爬虫的限制</h2><p>来源审查：判断User-Agent进行限制<br>&emsp;&emsp;检查来访HTTP协议头的User-Agent域，只响应浏览器或友好爬虫的访问。<br>发布公告：Robots协议<br>&emsp;&emsp;告知所有爬虫网站的爬取策略，要求爬虫遵守。  </p><h2 id="Robots协议-1"><a href="#Robots协议-1" class="headerlink" title="Robots协议"></a>Robots协议</h2><p>Robots协议全称Robots Exclusion Standard，即为网络爬虫排除标准。其作用是告知网络爬虫哪些内容可以抓取，哪些不能。<br>Robots协议通过在根目录给定robots.txt文件来实现上述功能。<br>案例：京东的Robots协议<br><a href="https://www.jd.com/robots.txt" target="_blank" rel="external">https://www.jd.com/robots.txt</a><br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">User-agent: *</div><div class="line">Disallow: /?*</div><div class="line">Disallow: /pop/*.html</div><div class="line">Disallow: /pinpai/*.html?*</div><div class="line">User-agent: EtaoSpider</div><div class="line">Disallow: /</div><div class="line">User-agent: HuihuiSpider</div><div class="line">Disallow: /</div><div class="line">User-agent: GwdangSpider</div><div class="line">Disallow: /</div><div class="line">User-agent: WochachaSpider</div><div class="line">Disallow: /</div></pre></td></tr></table></figure></p><h2 id="Robots协议的使用"><a href="#Robots协议的使用" class="headerlink" title="Robots协议的使用"></a>Robots协议的使用</h2><p>对于任何网络爬虫，都应该能自动或者人工地识别robots.txt文件，再进行内容爬取。但Robots协议是建议而非约束性，网络爬虫可以不遵守，但存在法律风险。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;根据嵩天视频教程整理&lt;/p&gt;
+&lt;h1 id=&quot;Robots协议&quot;&gt;&lt;a href=&quot;#Robots协议&quot; class=&quot;headerlink&quot; title=&quot;Robots协议&quot;&gt;&lt;/a&gt;Robots协议&lt;/h1&gt;&lt;h2 id=&quot;网络爬虫引发的问题&quot;&gt;&lt;a href=&quot;#网络爬虫引发的问题&quot; class=&quot;headerlink&quot; title=&quot;网络爬虫引发的问题&quot;&gt;&lt;/a&gt;网络爬虫引发的问题&lt;/h2&gt;&lt;p&gt;网络爬虫按尺寸可以划分为三大类：&lt;br&gt;&amp;emsp;&amp;emsp;爬取网页：小规模，数据量小，爬取速度不敏感。使用Request库实现&lt;br&gt;&amp;emsp;&amp;emsp;爬取网站，爬取系列网站：中规模，数据规模较大，爬取速度敏感。Scrapy库实现&lt;br&gt;&amp;emsp;&amp;emsp;爬取全网：大规模，搜索引擎，爬去速度关键。需要定制开发  &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Python" scheme="http://luyh1992.github.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="http://luyh1992.github.io/tags/Python/"/>
+    
+      <category term="爬虫" scheme="http://luyh1992.github.io/tags/%E7%88%AC%E8%99%AB/"/>
+    
+  </entry>
   
   <entry>
     <title>Python网络爬虫 一</title>

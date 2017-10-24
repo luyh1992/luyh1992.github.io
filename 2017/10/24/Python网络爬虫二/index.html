@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Python,爬虫," />
 
 
 
@@ -81,16 +81,18 @@
 
 
 
-<meta name="description" content="写些什么呢？">
-<meta property="og:type" content="website">
-<meta property="og:title" content="luyh的博客">
-<meta property="og:url" content="http://luyh1992.github.io/tags/爬虫/index.html">
+<meta name="description" content="根据嵩天视频教程整理 Robots协议网络爬虫引发的问题网络爬虫按尺寸可以划分为三大类：&amp;emsp;&amp;emsp;爬取网页：小规模，数据量小，爬取速度不敏感。使用Request库实现&amp;emsp;&amp;emsp;爬取网站，爬取系列网站：中规模，数据规模较大，爬取速度敏感。Scrapy库实现&amp;emsp;&amp;emsp;爬取全网：大规模，搜索引擎，爬去速度关键。需要定制开发">
+<meta name="keywords" content="Python,爬虫">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python网络爬虫二">
+<meta property="og:url" content="http://luyh1992.github.io/2017/10/24/Python网络爬虫二/index.html">
 <meta property="og:site_name" content="luyh的博客">
-<meta property="og:description" content="写些什么呢？">
+<meta property="og:description" content="根据嵩天视频教程整理 Robots协议网络爬虫引发的问题网络爬虫按尺寸可以划分为三大类：&amp;emsp;&amp;emsp;爬取网页：小规模，数据量小，爬取速度不敏感。使用Request库实现&amp;emsp;&amp;emsp;爬取网站，爬取系列网站：中规模，数据规模较大，爬取速度敏感。Scrapy库实现&amp;emsp;&amp;emsp;爬取全网：大规模，搜索引擎，爬去速度关键。需要定制开发">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-10-24T07:21:17.264Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="luyh的博客">
-<meta name="twitter:description" content="写些什么呢？">
+<meta name="twitter:title" content="Python网络爬虫二">
+<meta name="twitter:description" content="根据嵩天视频教程整理 Robots协议网络爬虫引发的问题网络爬虫按尺寸可以划分为三大类：&amp;emsp;&amp;emsp;爬取网页：小规模，数据量小，爬取速度不敏感。使用Request库实现&amp;emsp;&amp;emsp;爬取网站，爬取系列网站：中规模，数据规模较大，爬取速度敏感。Scrapy库实现&amp;emsp;&amp;emsp;爬取全网：大规模，搜索引擎，爬去速度关键。需要定制开发">
 
 
 
@@ -120,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://luyh1992.github.io/tags/爬虫/"/>
+  <link rel="canonical" href="http://luyh1992.github.io/2017/10/24/Python网络爬虫二/"/>
 
 
 
 
 
-  <title>标签: 爬虫 | luyh的博客</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title>Python网络爬虫二 | luyh的博客</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -145,7 +147,7 @@
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left ">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -249,82 +251,177 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>爬虫<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://luyh1992.github.io/2017/10/24/Python网络爬虫二/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="luyh1992">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/cat.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="luyh的博客">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2017/10/24/Python网络爬虫二/" itemprop="url">
-              
-                <span itemprop="name">Python网络爬虫二</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">Python网络爬虫二</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-10-24T14:43:41+08:00"
-              content="2017-10-24" >
-          10-24
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-24T14:43:41+08:00">
+                2017-10-24
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python/" itemprop="url" rel="index">
+                    <span itemprop="name">Python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-        
+      
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/10/23/Pytthon网络爬虫/" itemprop="url">
-              
-                <span itemprop="name">Python网络爬虫 一</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-10-23T15:17:51+08:00"
-              content="2017-10-23" >
-          10-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+      
+        <p>根据嵩天视频教程整理</p>
+<h1 id="Robots协议"><a href="#Robots协议" class="headerlink" title="Robots协议"></a>Robots协议</h1><h2 id="网络爬虫引发的问题"><a href="#网络爬虫引发的问题" class="headerlink" title="网络爬虫引发的问题"></a>网络爬虫引发的问题</h2><p>网络爬虫按尺寸可以划分为三大类：<br>&emsp;&emsp;爬取网页：小规模，数据量小，爬取速度不敏感。使用Request库实现<br>&emsp;&emsp;爬取网站，爬取系列网站：中规模，数据规模较大，爬取速度敏感。Scrapy库实现<br>&emsp;&emsp;爬取全网：大规模，搜索引擎，爬去速度关键。需要定制开发  </p>
+<a id="more"></a>
+<p>受限于编程水平和目的，网络爬虫将会给web服务器带来巨大的资源开销。<br>由于服务器上的数据往往具有产权归属，网络爬虫获得数据后用于牟利将带来法律风险。<br>网络爬虫可能具备突破简单访问控制的能力，获得被保护数据从而泄露个人隐私。  </p>
+<h2 id="网络爬虫的限制"><a href="#网络爬虫的限制" class="headerlink" title="网络爬虫的限制"></a>网络爬虫的限制</h2><p>来源审查：判断User-Agent进行限制<br>&emsp;&emsp;检查来访HTTP协议头的User-Agent域，只响应浏览器或友好爬虫的访问。<br>发布公告：Robots协议<br>&emsp;&emsp;告知所有爬虫网站的爬取策略，要求爬虫遵守。  </p>
+<h2 id="Robots协议-1"><a href="#Robots协议-1" class="headerlink" title="Robots协议"></a>Robots协议</h2><p>Robots协议全称Robots Exclusion Standard，即为网络爬虫排除标准。其作用是告知网络爬虫哪些内容可以抓取，哪些不能。<br>Robots协议通过在根目录给定robots.txt文件来实现上述功能。<br>案例：京东的Robots协议<br><a href="https://www.jd.com/robots.txt" target="_blank" rel="external">https://www.jd.com/robots.txt</a><br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">User-agent: *</div><div class="line">Disallow: /?*</div><div class="line">Disallow: /pop/*.html</div><div class="line">Disallow: /pinpai/*.html?*</div><div class="line">User-agent: EtaoSpider</div><div class="line">Disallow: /</div><div class="line">User-agent: HuihuiSpider</div><div class="line">Disallow: /</div><div class="line">User-agent: GwdangSpider</div><div class="line">Disallow: /</div><div class="line">User-agent: WochachaSpider</div><div class="line">Disallow: /</div></pre></td></tr></table></figure></p>
+<h2 id="Robots协议的使用"><a href="#Robots协议的使用" class="headerlink" title="Robots协议的使用"></a>Robots协议的使用</h2><p>对于任何网络爬虫，都应该能自动或者人工地识别robots.txt文件，再进行内容爬取。但Robots协议是建议而非约束性，网络爬虫可以不遵守，但存在法律风险。</p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Python/" rel="tag"># Python</a>
+          
+            <a href="/tags/爬虫/" rel="tag"># 爬虫</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/10/23/Pytthon网络爬虫/" rel="next" title="Python网络爬虫 一">
+                <i class="fa fa-chevron-left"></i> Python网络爬虫 一
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -332,6 +429,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -352,8 +453,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -440,6 +550,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Robots协议"><span class="nav-number">1.</span> <span class="nav-text">Robots协议</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#网络爬虫引发的问题"><span class="nav-number">1.1.</span> <span class="nav-text">网络爬虫引发的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网络爬虫的限制"><span class="nav-number">1.2.</span> <span class="nav-text">网络爬虫的限制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Robots协议-1"><span class="nav-number">1.3.</span> <span class="nav-text">Robots协议</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Robots协议的使用"><span class="nav-number">1.4.</span> <span class="nav-text">Robots协议的使用</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -580,6 +706,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
